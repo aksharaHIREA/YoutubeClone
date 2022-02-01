@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Youtube project
+        </title>
+    </head>
+    <style>
+         #img{
+             background-color: rgb(255, 255, 255);
+             height: 40px;
+             width: 1500px;
+             display: flex;
+             padding-left: 20px;
+             color: black;
+             padding-top: 20px;
+             font-style: normal;
+            }
+
+        #mainbox{
+            width: 1300px;
+            height: 450px;                  
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            padding-left: 40px;
+            padding-top: 20px;
+            font-style: normal;
+        }
+
+        #box{
+            display: flex;
+            padding-left: 15px;
+            padding-bottom: 0px;
+            font-style: normal;
+        }
+
+            #searchbox{
+                display: flex;
+                background-color: white;
+                border: 1px solid rgb(180, 180, 180);
+                height: 30px;
+                width: 530px;
+                padding-top: 5px;
+                font-size: 20px;
+                padding-left: 5px;
+                font-style: normal;
+            }
+
+            #searchbox2{
+                display: flex;
+                border: 1px solid rgb(180, 180, 180);
+                height: 35px;
+                width: 60px;
+                font-style: normal;
+                }
+
+                #mike{
+                    display: flex;
+                    background-color: white;
+                    height: 20px;
+                    width: 40px;
+                    border-radius: 50px;
+                    padding-top: 11px;
+                    font-style: normal;
+                }
+
+                #create{
+                    display: flex;
+                    width: 50px;
+                    height: 40px;
+                    padding-top: 0px;
+                    font-style: normal;
+                }
+
+                #ninedots{
+                    display: flex;
+                    width: 50px;
+                    height: 60px;
+                    font-style: normal;
+
+                }
+
+                #notification{
+                    display: flex;
+                    width: 50px;
+                    height: 60px;
+                    font-style: normal;
+                }
+
+                #mypic{
+                    display: flex;
+                    width: 50px;
+                    height: 45px;
+                    font-style: normal;
+                }
+
+                #video{
+                    display: flex;
+                    width: 500px;
+                    height: 110px;
+                    flex-direction: row;
+                    padding-left: 10px;
+                    background-color: white;
+                    font-style: normal;
+                    
+                    
+                }
+
+                #video1{
+                    display: flex;
+                    width: 500px;
+                    height: 110px;
+                    flex-direction: row;
+                    padding-left: 10px; 
+                    font-style: normal;
+                }
+
+                #video2{
+                    display: flex;
+                    width: 500px;
+                    height: 110px;
+                    flex-direction: column;
+                    padding-left: 10px; 
+                    text-align: left;
+                    font-style: normal;
+                }
+
+
+                #embed1{
+                    display: flex;
+                    width: 500px;
+                    height: 110px;
+                    flex-direction: row;
+                    padding-left: 8px;
+                    padding-top: 0px;
+                    font-size: 17px;
+                   text-align: left;
+                   font-style: normal;
+                
+                }
+
+
+
+               #likebutton{
+                    display: flex;
+                    width: 90px;
+                    height: 40px;
+                    padding-top: 10px;
+                    background-color: rgb(255, 255, 255);
+                    font-style: normal;
+                }
+
+                #dislike{
+                    display: flex;
+                    width: 90px;
+                    height: 40px;
+                    padding-top: 10px;
+                    background-color: rgb(255, 255, 255);
+                    font-style: normal;
+                }
+
+                #share{
+                    display: flex;
+                    width: 90px;
+                    height: 40px;
+                    padding-top: 10px;
+                    background-color: rgb(255, 255, 255);
+                    font-style: normal;
+                }
+
+                #save{
+                    display: flex;
+                    width: 90px;
+                    height: 40px;
+                    padding-top: 10px;
+                    background-color: rgb(255, 255, 255);
+                    font-style: normal;
+                }
+
+                #threedots{
+                    display: flex;
+                    width: 50px;
+                    height: 40px;
+                    padding-top: 10px;
+                    background-color: rgb(255, 255, 255);
+                    font-style: normal;
+                }
+
+                #A{
+                    display: flex;
+                    padding-top: 10px;
+                    background-color: rgb(255, 255, 255);
+                    padding-left: 15px;
+                    flex-direction: row;
+                    font-style: normal;
+                }
+
+                #subscribe{
+                    display: flex;
+                    width: 50px;
+                    height: 40px;
+                    padding-top: 10px;
+                    background-color: rgb(255, 255, 255);
+                    flex-direction: row;
+                    font-style: normal;
+                }
+
+                #box2{
+                    display: flex;
+                    border: solid 2px black;
+                    height: 20px;
+                    width: 35px;
+                    margin-left: 3px;
+                    margin-top: 13px;
+                    padding-top: 8px;
+                    margin-bottom: 20px;
+                    border-radius: 20px;
+                    padding-left: 5px;
+                    text-align: center;
+                    background-color: black;
+                    color: white;
+                    flex-direction: row;
+                    font-style: normal;
+                }
+
+                #box3{
+                    display:flex ;
+                    border: solid 1px rgb(165, 165, 165);
+                    width: 90px;
+                    height: 20px;
+                    margin-left: 20px;
+                    border-radius: 20px;
+                    flex-direction: row;
+                    background-color: rgb(218, 218, 218);
+                    margin-top: 13px;
+                    padding: 5px;
+                    font-style: normal;
+
+                }
+
+                #box4{
+                    display: flex;
+                    border: solid 1px rgb(165, 165, 165) ;
+                    width: 200px;
+                    height: 20px;
+                    margin-left: 20px;
+                    border-radius: 20px;
+                    flex-direction: row;
+                    background-color: rgb(218, 218, 218);
+                    margin-top: 13px;
+                    padding: 5px;
+                    font-style: normal;
+                }
+
+                #box5{
+                    display: flex;
+                    border: solid 1px rgb(165, 165, 165) ;
+                    width: 35px;
+                    height: 20px;
+                    margin-left: 20px;
+                    border-radius: 20px;
+                    flex-direction: row;
+                    background-color: rgb(218, 218, 218);
+                    margin-top: 13px;
+                    padding: 5px;
+                    font-style: normal;
+                }
+
+
+                #A1{
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 15px;
+                    padding-left: 15px;
+                    font-style: normal;
+                }
+
+                #Amain{
+                    display: flex;
+                    width: 1000px;
+                    height: 100px;
+                    flex-direction: row;
+                    background-color: rgb(255, 255, 255);
+                    font-style: normal;
+                }
+
+
+</style>
+<body>
+        <div id ="img">
+              <img src="img/three lines.jpg" alt="no " height="20" width="25"> &nbsp &nbsp &nbsp &nbsp 
+        
+
+            <img src="img/youtube.png"   alt="no " height="20" width="80" > &nbsp <span style="color: black;"><sup> IN </sup></span>
+             
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp    
+            <div id ="searchbox">
+                <span style="color: rgb(121, 121, 121);"> Search </span>
+            </div>
+
+            <div id ="searchbox2">
+                <img src="img/Search.jpg"   alt="no " height="32" width="51" >
+            </div>
+            &nbsp &nbsp 
+            <div id="mike">
+                <img src="img/mike.png"   alt="no " height="20" width="20" >
+             </div>
+             &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+             &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+             <div id="create">
+                 <img src="img/video call.png" alt="no" width="50" height="50">
+             </div>
+
+
+             &nbsp &nbsp
+             <div id="ninedots">
+                 <img src="img/nine.png" alt="no" width="50" height="50">
+             </div>
+
+             &nbsp &nbsp
+             <div id="notification">
+                 <img src="img/notification.png" alt="no" width="50" height="50">
+             </div>
+
+             &nbsp &nbsp
+             <div id="mypic">
+                 <img src="img/my pic.png" alt="no" width="50" height="45">
+             </div> <br>
+            </div>
+            
+
+<div id="mainbox">
+
+        <iframe width="850" height="450" src="https://www.youtube.com/embed/u0OeZfIfBRI"></iframe>
+    
+        
+ <div id="video2">    <div id="video">
+
+    <div id="box2">
+     
+            All
+
+         </div> 
+
+         <div id="box3">
+             Test cricket
+         </div>
+
+         <div id="box4">
+            Pakistan national cricket team 
+        </div>
+
+        <div id="box5">
+            song 
+        </div>
+      
+
+</div> 
+
+
+
+<div id="video1">
+    <iframe width="160" height="100" src="https://www.youtube.com/embed/dFvd2urgpT8"></iframe>
+
+    <div id="embed1">
+        <b>
+         how how to add background image in div <br>
+         in html css. <br>
+        <span style="color: gray;"><span style="font-size: 15px;">
+         Swift learn <br>
+         65K view . 3 years</span>
+       
+        </b>
+      
+    </div> 
+    
+
+</div>
+
+<div id="video1">
+    <iframe width="160" height="100" src="
+    https://www.youtube.com/embed/PlxWf493en4"></iframe>
+
+    <div id="embed1">
+        <b>
+        HTML Tutorial - How to Make a Super Simple Website<br>
+        <span style="color: gray;"><span style="font-size: 15px;">
+            freeCodeCamp.org <br>
+            1.5M views . 3 years ago</span>
+       
+        </b>
+      
+    </div> 
+    
+
+</div>
+
+<div id="video1">
+    <iframe width="160" height="100" src="https://www.youtube.com/embed/KM1dCzwNYfs"></iframe>
+
+    <div id="embed1">
+        <b>
+            Computer Training Part 1 - Learn  <br>
+            Computer in Urdu/Hindi - Learn <br>
+            Computer<br>
+         <span style="color: gray;"><span style="font-size: 15px;">
+        JoGi BaBa Technology <br>
+        4.5M views . 3 years ago</span>
+       
+        </b>
+      
+    </div> 
+    
+
+</div>
+
+
+<div id="video1">
+    <iframe width="160" height="100" src="https://www.youtube.com/embed/M0fyuNtK_QE"></iframe>
+
+    <div id="embed1">
+        <b>
+            "Fractions" Chapter 7 - Introduction  <br>
+            - Class 6th Maths<br>
+    
+         <span style="color: gray;"><span style="font-size: 15px;">
+            1.6M views . 3 years ago <br>
+             Mathematics Class VI </span>
+       
+        </b>
+      
+    </div> 
+    
+
+</div>
+<div id="video1">
+    <iframe width="160" height="100" src="https://www.youtube.com/embed/zJwbZX4i-N4"></iframe>
+
+    <div id="embed1">
+        <b>
+        
+            Embed Youtube video in HTML | <br>
+            Embed Youtube video in Web...<br>
+            <span style="color: gray;"><span style="font-size: 15px;">
+            Swift learn <br>
+            52K view . 2 years</span>
+       
+        </b>
+      
+    </div> 
+    
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+</div>   
+     
+     <div id="box">
+
+           <h2> 
+            What is HTML? What Does It Do? And What Is It Used For? </h2>       
+           
+    </div>
+
+    <div id="box"> 
+        <span style="color: rgb(156, 156, 156);"><h4>9.1K views . 28 Jul 2011  </h4></span> 
+           
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        &nbsp &nbsp 
+       
+        <div id="likebutton">
+            <img src="img/like.png" alt="no" width="90" height="40">
+        </div>
+
+        &nbsp &nbsp 
+
+        <div id="dislike">
+            <img src="img/dislike.png" alt="no" width="90" height="40">
+        </div>
+
+        &nbsp &nbsp  
+
+        <div id="share">
+            <img src="img/share.png" alt="no" width="90" height="40">
+        </div>
+
+        &nbsp &nbsp  
+
+        <div id="save">
+            <img src="img/save.png" alt="no" width="90" height="40">
+        </div>
+
+        &nbsp &nbsp  
+
+        <div id="threedots">
+            <img src="img/three dots.png" alt="no" width="50" height="40">
+        </div>
+
+
+    </div> 
+    <hr>
+
+    <div id="Amain">
+
+    <div id="A">
+        <img src="img/Aa.png" alt="no" width="60" height="50">
+
+        <div id="A1">
+            <p>
+                <b>
+                    <h4>
+                        
+                         hitesh sardarmal Jangid<br>
+                         <span style="color: rgb(156, 156, 156);"> 2 subscribers<br></span>
+                    </h4>
+                </b>
+            </p>
+        </div>
+
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp
+
+
+        <div id="create">
+            <img src="img/subscribe.png" alt="no" width="120" height="60">
+        </div>
+        
+    </div>
+
+</div>
+
+  
+</body>
+</html>
